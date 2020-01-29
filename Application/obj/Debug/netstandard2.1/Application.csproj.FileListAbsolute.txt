@@ -11,3 +11,16 @@ C:\Users\jnowo\Development\Conservationcastbot\Application\obj\Debug\netstandard
 C:\Users\jnowo\Development\Conservationcastbot\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
 C:\Users\jnowo\Development\Conservationcastbot\Application\obj\Debug\netstandard2.1\Application.dll
 C:\Users\jnowo\Development\Conservationcastbot\Application\obj\Debug\netstandard2.1\Application.pdb
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\bin\Debug\netstandard2.1\Application.deps.json
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\bin\Debug\netstandard2.1\Application.dll
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\bin\Debug\netstandard2.1\Application.pdb
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\bin\Debug\netstandard2.1\Domain.dll
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\bin\Debug\netstandard2.1\Persistance.dll
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\bin\Debug\netstandard2.1\Domain.pdb
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\bin\Debug\netstandard2.1\Persistance.pdb
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\obj\Debug\netstandard2.1\Application.csprojAssemblyReference.cache
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\obj\Debug\netstandard2.1\Application.dll
+C:\Users\jnowo\Development\ConservationcastbotBack\Application\obj\Debug\netstandard2.1\Application.pdb

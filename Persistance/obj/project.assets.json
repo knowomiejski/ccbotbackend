@@ -1287,11 +1287,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jnowo\\Development\\Conservationcastbot\\Persistance\\Persistance.csproj",
+      "projectUniqueName": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\Persistance.csproj",
       "projectName": "Persistance",
-      "projectPath": "C:\\Users\\jnowo\\Development\\Conservationcastbot\\Persistance\\Persistance.csproj",
+      "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\Persistance.csproj",
       "packagesPath": "C:\\Users\\jnowo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jnowo\\Development\\Conservationcastbot\\Persistance\\obj\\",
+      "outputPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jnowo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1307,8 +1307,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\jnowo\\Development\\Conservationcastbot\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\jnowo\\Development\\Conservationcastbot\\Domain\\Domain.csproj"
+            "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj"
             }
           }
         }

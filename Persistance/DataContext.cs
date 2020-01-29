@@ -1,6 +1,5 @@
 ﻿using Domain;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace Persistance
 {
@@ -12,6 +11,8 @@ namespace Persistance
         }
 
         public DbSet<Value> Values { get; set; }
+        public DbSet<Bot> Bot { get; set; }
+        public DbSet<Settings> Settings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
