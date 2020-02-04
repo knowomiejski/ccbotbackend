@@ -11,4 +11,12 @@ namespace Domain
         public string Description { get; set; }
         public string ImageUrl { get; set; }
     }
+
+    public class BotFrontend
+    {
+        public Guid Id { get; set; }
+        public string Nick { get; set; }
+        public string Description { get; set; }
+        public string ImageUrl { get; set; }
+    }
 }

@@ -5,16 +5,14 @@ using Domain;
 using System.Threading;
 using Persistance;
 
-namespace Application.ASettings
+namespace Application.ABot
 {
-    public class Create
+    public class Delete
     {
         public class Command : IRequest
         {
-            public string Name { get; set; }
-            public string Prefix { get; set; }
-            public int ReminderTimer { get; set; }
-            public string FolderId { get; set; }
+            public Guid Id { get; set; }
+   
         }
 
         public class Handler : IRequestHandler<Command>
@@ -28,16 +26,12 @@ namespace Application.ASettings
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                Settings settings = new Settings
-                {
-                    Id = Guid.NewGuid(),
-                    Name = request.Name,
-                    Prefix = request.Prefix,
-                    ReminderTimer = request.ReminderTimer,
-                    FolderId = request.FolderId
-                };
+                Bot bot = await _context.Bot.FindAsync(request.Id);
+                if (bot == null)
+                    throw new Exception("These settings do not exist");
 
-                _context.Settings.Add(settings);
+                _context.Remove(bot);
+                
                 bool success = await _context.SaveChangesAsync() > 0;
 
                 if (success) return Unit.Value;

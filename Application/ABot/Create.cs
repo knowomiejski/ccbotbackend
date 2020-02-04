@@ -5,16 +5,17 @@ using Domain;
 using System.Threading;
 using Persistance;
 
-namespace Application.ASettings
+namespace Application.ABot
 {
     public class Create
     {
         public class Command : IRequest
         {
-            public string Name { get; set; }
-            public string Prefix { get; set; }
-            public int ReminderTimer { get; set; }
-            public string FolderId { get; set; }
+            public string TMIToken { get; set; }
+            public string TwitchClientId { get; set; }
+            public string Nick { get; set; }
+            public string Description { get; set; }
+            public string ImageUrl { get; set; }
         }
 
         public class Handler : IRequestHandler<Command>
@@ -28,16 +29,17 @@ namespace Application.ASettings
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                Settings settings = new Settings
+                Bot bot = new Bot
                 {
                     Id = Guid.NewGuid(),
-                    Name = request.Name,
-                    Prefix = request.Prefix,
-                    ReminderTimer = request.ReminderTimer,
-                    FolderId = request.FolderId
+                    TMIToken = request.TMIToken,
+                    TwitchClientId = request.TwitchClientId,
+                    Nick = request.Nick,
+                    Description = request.Description,
+                    ImageUrl = request.ImageUrl
                 };
 
-                _context.Settings.Add(settings);
+                _context.Bot.Add(bot);
                 bool success = await _context.SaveChangesAsync() > 0;
 
                 if (success) return Unit.Value;
