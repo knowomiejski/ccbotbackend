@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Net;
 using System.Threading.Tasks;
 using MediatR;
 using Domain;
 using System.Threading;
+using Application.Errors;
 using Persistance;
 
 namespace Application.ABot
@@ -32,14 +34,17 @@ namespace Application.ABot
             {
                 Bot bot = await _context.Bot.FindAsync(request.Id);
                 if (bot == null)
-                    throw new Exception("These settings do not exist");
+                    throw new RestException(HttpStatusCode.NotFound, new
+                    {
+                        settings = "Could Not find bot"
+                    });
 
                 bot.TMIToken = request.TMIToken ?? bot.TMIToken;
                 bot.TwitchClientId = request.TwitchClientId ?? bot.TwitchClientId;
                 bot.Nick = request.Nick ?? bot.Nick;
                 bot.Description = request.Description ?? bot.Description;
                 bot.ImageUrl = request.ImageUrl ?? bot.ImageUrl;
-                
+
                 bool success = await _context.SaveChangesAsync() > 0;
 
                 if (success) return Unit.Value;

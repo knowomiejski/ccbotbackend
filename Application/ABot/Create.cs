@@ -11,6 +11,7 @@ namespace Application.ABot
     {
         public class Command : IRequest
         {
+            public Guid Id { get; set; }
             public string TMIToken { get; set; }
             public string TwitchClientId { get; set; }
             public string Nick { get; set; }
@@ -31,7 +32,7 @@ namespace Application.ABot
             {
                 Bot bot = new Bot
                 {
-                    Id = Guid.NewGuid(),
+                    Id = request.Id,
                     TMIToken = request.TMIToken,
                     TwitchClientId = request.TwitchClientId,
                     Nick = request.Nick,

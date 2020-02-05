@@ -4,6 +4,8 @@ using MediatR;
 using Domain;
 using System.Threading;
 using Persistance;
+using Application.Errors;
+using System.Net;
 
 namespace Application.ASettings
 {
@@ -28,7 +30,10 @@ namespace Application.ASettings
             {
                 Settings settings = await _context.Settings.FindAsync(request.Id);
                 if (settings == null)
-                    throw new Exception("These settings do not exist");
+                    throw new RestException(HttpStatusCode.NotFound, new
+                    {
+                        settings = "Could Not find settings"
+                    });
 
                 _context.Remove(settings);
                 

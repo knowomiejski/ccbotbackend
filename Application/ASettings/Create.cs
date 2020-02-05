@@ -4,6 +4,7 @@ using MediatR;
 using Domain;
 using System.Threading;
 using Persistance;
+using FluentValidation;
 
 namespace Application.ASettings
 {
@@ -11,10 +12,22 @@ namespace Application.ASettings
     {
         public class Command : IRequest
         {
+            public Guid Id { get; set; }
             public string Name { get; set; }
             public string Prefix { get; set; }
             public int ReminderTimer { get; set; }
             public string FolderId { get; set; }
+        }
+
+        public class CommandValidator : AbstractValidator<Command>
+        {
+            public CommandValidator()
+            {
+                RuleFor(x => x.Name).NotEmpty();
+                RuleFor(x => x.Prefix).NotEmpty();
+                RuleFor(x => x.ReminderTimer).NotEmpty();
+                RuleFor(x => x.FolderId).NotEmpty().WithMessage("yo");
+            }
         }
 
         public class Handler : IRequestHandler<Command>
@@ -30,7 +43,7 @@ namespace Application.ASettings
             {
                 Settings settings = new Settings
                 {
-                    Id = Guid.NewGuid(),
+                    Id = request.Id,
                     Name = request.Name,
                     Prefix = request.Prefix,
                     ReminderTimer = request.ReminderTimer,

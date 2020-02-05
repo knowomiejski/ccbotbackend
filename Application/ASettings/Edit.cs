@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Net;
 using System.Threading.Tasks;
 using MediatR;
 using Domain;
 using System.Threading;
+using Application.Errors;
 using Persistance;
+using FluentValidation;
 
 namespace Application.ASettings
 {
@@ -16,6 +19,17 @@ namespace Application.ASettings
             public string Prefix { get; set; }
             public int? ReminderTimer { get; set; }
             public string FolderId { get; set; }
+        }
+
+        public class CommandValidator : AbstractValidator<Command>
+        {
+            public CommandValidator()
+            {
+                RuleFor(x => x.Name).NotEmpty();
+                RuleFor(x => x.Prefix).NotEmpty();
+                RuleFor(x => x.ReminderTimer).NotEmpty();
+                RuleFor(x => x.FolderId).NotEmpty().WithMessage("yo");
+            }
         }
 
         public class Handler : IRequestHandler<Command>
@@ -31,7 +45,10 @@ namespace Application.ASettings
             {
                 Settings settings = await _context.Settings.FindAsync(request.Id);
                 if (settings == null)
-                    throw new Exception("These settings do not exist");
+                    throw new RestException(HttpStatusCode.NotFound, new
+                    {
+                        settings = "Could Not find settings"
+                    });
 
                 settings.Name = request.Name ?? settings.Name;
                 settings.Prefix = request.Prefix ?? settings.Prefix;

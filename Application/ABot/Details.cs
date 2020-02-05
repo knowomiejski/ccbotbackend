@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Net;
 using System.Threading.Tasks;
 using MediatR;
 using Domain;
 using System.Threading;
+using Application.Errors;
 using Persistance;
 
 namespace Application.ABot
@@ -26,6 +28,13 @@ namespace Application.ABot
             public async Task<BotFrontend> Handle(Query request, CancellationToken cancellationToken)
             {
                 Bot bot = await _context.Bot.FindAsync(request.Id);
+                if (bot == null)
+                    throw new RestException(HttpStatusCode.NotFound, new
+                    {
+                        settings = "Could Not find bot"
+                    });
+
+                
                 BotFrontend botFrontend = new BotFrontend();
                 botFrontend.Id = bot.Id;
                 botFrontend.Nick = bot.Nick;
