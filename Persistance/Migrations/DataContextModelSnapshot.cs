@@ -104,6 +104,9 @@ namespace Persistance.Migrations
                     b.Property<string>("TwitchClientId")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Type")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Bot");

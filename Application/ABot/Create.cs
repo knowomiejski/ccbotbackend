@@ -16,6 +16,7 @@ namespace Application.ABot
             public string TwitchClientId { get; set; }
             public string Nick { get; set; }
             public string Description { get; set; }
+            public string Type { get; set; }
             public string ImageUrl { get; set; }
         }
 
@@ -37,6 +38,7 @@ namespace Application.ABot
                     TwitchClientId = request.TwitchClientId,
                     Nick = request.Nick,
                     Description = request.Description,
+                    Type = request.Type,
                     ImageUrl = request.ImageUrl
                 };
 

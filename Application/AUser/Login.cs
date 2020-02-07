@@ -46,14 +46,16 @@ namespace Application.User
 
                 if (user == null)
                 {
-                    throw new RestException(HttpStatusCode.Unauthorized);
+                    throw new RestException(HttpStatusCode.Unauthorized, new
+                    {
+                        login = "Wrong email or password"
+                    });
                 }
 
                 var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
 
                 if (result.Succeeded)
                 {
-                    // TODO gen token
                     return new User
                     {
                         DisplayName = user.DisplayName,
@@ -62,8 +64,10 @@ namespace Application.User
                         Image = null
                     };
                 }
-                throw new RestException(HttpStatusCode.Unauthorized);
-            }
+                throw new RestException(HttpStatusCode.Unauthorized, new
+                {
+                    login = "Wrong email or password"
+                });            }
         }
     }
 }

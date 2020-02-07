@@ -39,6 +39,7 @@ namespace Application.ABot
                 botFrontend.Id = bot.Id;
                 botFrontend.Nick = bot.Nick;
                 botFrontend.Description = bot.Description;
+                botFrontend.Type = bot.Type;
                 botFrontend.ImageUrl = bot.ImageUrl;
                 return botFrontend;
             }

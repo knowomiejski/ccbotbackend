@@ -18,6 +18,7 @@ namespace Application.ABot
             public string TwitchClientId { get; set; }
             public string Nick { get; set; }
             public string Description { get; set; }
+            public string Type { get; set; }
             public string ImageUrl { get; set; }
         }
 
@@ -43,6 +44,7 @@ namespace Application.ABot
                 bot.TwitchClientId = request.TwitchClientId ?? bot.TwitchClientId;
                 bot.Nick = request.Nick ?? bot.Nick;
                 bot.Description = request.Description ?? bot.Description;
+                bot.Type = request.Type ?? bot.Type;
                 bot.ImageUrl = request.ImageUrl ?? bot.ImageUrl;
 
                 bool success = await _context.SaveChangesAsync() > 0;

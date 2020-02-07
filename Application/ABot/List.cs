@@ -34,6 +34,7 @@ namespace Application.ABot
                     newBotFrontend.Id = bot.Id;
                     newBotFrontend.Nick = bot.Nick;
                     newBotFrontend.Description = bot.Description;
+                    newBotFrontend.Type = bot.Type;
                     newBotFrontend.ImageUrl = bot.ImageUrl;
                     botFrontendList.Add(newBotFrontend);
                 }
