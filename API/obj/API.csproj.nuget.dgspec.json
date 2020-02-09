@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\API\\API.csproj": {}
+    "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\API\\API.csproj": {
+    "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\jnowo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\API\\obj\\",
+        "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\win 10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jnowo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\win 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Application\\Application.csproj"
+              "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Application\\Application.csproj"
               },
-              "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -90,17 +90,17 @@
         }
       }
     },
-    "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Application\\Application.csproj": {
+    "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\jnowo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Application\\obj\\",
+        "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\win 10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jnowo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\win 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,11 +113,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj"
+              "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\Persistance.csproj": {
-                "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\Persistance.csproj"
+              "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Persistance\\Persistance.csproj": {
+                "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Persistance\\Persistance.csproj"
               }
             }
           }
@@ -151,6 +151,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -159,17 +162,17 @@
         }
       }
     },
-    "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj": {
+    "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\jnowo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\win 10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jnowo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\win 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -217,17 +220,17 @@
         }
       }
     },
-    "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\jnowo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\win 10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jnowo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\win 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -240,8 +243,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Application\\Application.csproj"
+              "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Application\\Application.csproj"
               }
             }
           }
@@ -271,6 +274,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -279,17 +285,17 @@
         }
       }
     },
-    "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\Persistance.csproj": {
+    "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Persistance\\Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\Persistance.csproj",
+        "projectUniqueName": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Persistance\\Persistance.csproj",
         "projectName": "Persistance",
-        "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\Persistance.csproj",
-        "packagesPath": "C:\\Users\\jnowo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\obj\\",
+        "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Persistance\\Persistance.csproj",
+        "packagesPath": "C:\\Users\\win 10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jnowo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\win 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -302,8 +308,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj"
+              "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj"
               }
             }
           }

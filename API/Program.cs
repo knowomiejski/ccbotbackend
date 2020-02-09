@@ -23,6 +23,7 @@ namespace API
                 try
                 {
                     var context = services.GetRequiredService<DataContext>();
+                    var questionsBot = services.GetRequiredService<DataContext>();
                     var userManager = services.GetRequiredService<UserManager<AppUser>>();
                     context.Database.Migrate();
                     Seed.SeedData(context, userManager).Wait();

@@ -45,6 +45,7 @@ namespace Persistance
                 new Settings
                 {
                     Name = "StandardSettings",
+                    TargetChannel = "potatomaster4000",
                     Prefix = "!",
                     ReminderTimer = 120,
                     FolderId = "1byWobqcHkOQMBELGSXK1WL3Gjrp-_J5_"

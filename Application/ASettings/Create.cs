@@ -14,6 +14,7 @@ namespace Application.ASettings
         {
             public Guid Id { get; set; }
             public string Name { get; set; }
+            public string TargetChannel { get; set; }
             public string Prefix { get; set; }
             public int ReminderTimer { get; set; }
             public string FolderId { get; set; }
@@ -45,6 +46,7 @@ namespace Application.ASettings
                 {
                     Id = request.Id,
                     Name = request.Name,
+                    TargetChannel = request.TargetChannel,
                     Prefix = request.Prefix,
                     ReminderTimer = request.ReminderTimer,
                     FolderId = request.FolderId

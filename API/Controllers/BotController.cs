@@ -1,5 +1,4 @@
 ﻿using Application.ABot;
-using Domain;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,15 +8,19 @@ using System.Threading.Tasks;
 namespace API.Controllers
 {
     public class BotController : BaseController
-
-
     {
-
         // GET api/bot
         [HttpGet]
         public async Task<ActionResult<List<BotFrontend>>> List()
         {
             return await Mediator.Send(new List.Query());
+        }
+        
+        // GET api/bot
+        [HttpGet("type/{type}")]
+        public async Task<ActionResult<List<BotFrontend>>> ListBotsOfType(string type)
+        {
+            return await Mediator.Send(new ListBotsOfType.Query{ BotType = type});
         }
 
         // GET api/bot/id

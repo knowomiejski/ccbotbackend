@@ -130,6 +130,9 @@ namespace Persistance.Migrations
                     b.Property<int>("ReminderTimer")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("TargetChannel")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
                     b.ToTable("Settings");

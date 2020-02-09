@@ -6,3 +6,11 @@ C:\Users\jnowo\Development\ConservationcastbotBack\Domain\obj\Debug\netcoreapp3.
 C:\Users\jnowo\Development\ConservationcastbotBack\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
 C:\Users\jnowo\Development\ConservationcastbotBack\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 C:\Users\jnowo\Development\ConservationcastbotBack\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\win 10\Desktop\Conservationcast memes\ConservationcastBack\ccbotbackend\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+C:\Users\win 10\Desktop\Conservationcast memes\ConservationcastBack\ccbotbackend\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\win 10\Desktop\Conservationcast memes\ConservationcastBack\ccbotbackend\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\win 10\Desktop\Conservationcast memes\ConservationcastBack\ccbotbackend\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+C:\Users\win 10\Desktop\Conservationcast memes\ConservationcastBack\ccbotbackend\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+C:\Users\win 10\Desktop\Conservationcast memes\ConservationcastBack\ccbotbackend\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+C:\Users\win 10\Desktop\Conservationcast memes\ConservationcastBack\ccbotbackend\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+C:\Users\win 10\Desktop\Conservationcast memes\ConservationcastBack\ccbotbackend\Domain\obj\Debug\netcoreapp3.1\Domain.pdb

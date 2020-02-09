@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using MediatR;
-using Domain;
 using System.Threading;
-using Persistance;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Persistance;
 
 namespace Application.ABot
 {
@@ -12,7 +11,6 @@ namespace Application.ABot
     {
         public class Query : IRequest<List<BotFrontend>>
         {
-
         }
 
         public class Handler : IRequestHandler<Query, List<BotFrontend>>
@@ -26,18 +24,21 @@ namespace Application.ABot
 
             public async Task<List<BotFrontend>> Handle(Query request, CancellationToken cancellationToken)
             {
-                List<Bot> botList = await _context.Bot.ToListAsync();
-                List<BotFrontend> botFrontendList = new List<BotFrontend>();
-                foreach(Bot bot in botList)
+                var botList = await _context.Bot.ToListAsync();
+                var botFrontendList = new List<BotFrontend>();
+                foreach (var bot in botList)
                 {
-                    BotFrontend newBotFrontend = new BotFrontend();
-                    newBotFrontend.Id = bot.Id;
-                    newBotFrontend.Nick = bot.Nick;
-                    newBotFrontend.Description = bot.Description;
-                    newBotFrontend.Type = bot.Type;
-                    newBotFrontend.ImageUrl = bot.ImageUrl;
+                    var newBotFrontend = new BotFrontend
+                    {
+                        Id = bot.Id,
+                        Nick = bot.Nick,
+                        Description = bot.Description,
+                        Type = bot.Type,
+                        ImageUrl = bot.ImageUrl
+                    };
                     botFrontendList.Add(newBotFrontend);
                 }
+
                 return botFrontendList;
             }
         }

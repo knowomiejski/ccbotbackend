@@ -1193,19 +1193,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jnowo\\.nuget\\packages\\": {}
+    "C:\\Users\\win 10\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\Persistance.csproj",
+      "projectUniqueName": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Persistance\\Persistance.csproj",
       "projectName": "Persistance",
-      "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\Persistance.csproj",
-      "packagesPath": "C:\\Users\\jnowo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Persistance\\obj\\",
+      "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Persistance\\Persistance.csproj",
+      "packagesPath": "C:\\Users\\win 10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Persistance\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jnowo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\win 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1218,8 +1218,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj"
+            "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj"
             }
           }
         }

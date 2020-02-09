@@ -798,19 +798,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jnowo\\.nuget\\packages\\": {}
+    "C:\\Users\\win 10\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\jnowo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jnowo\\Development\\ConservationcastbotBack\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\win 10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\win 10\\Desktop\\Conservationcast memes\\ConservationcastBack\\ccbotbackend\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jnowo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\win 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
