@@ -7,7 +7,7 @@ namespace Application.Interfaces
         public bool IsRunning { get; set; }
         public Bot Bot { get; set; }
         public Settings Settings { get; set; }
-        public void StartBot();
+        public bool StartBot();
         public void StopBot();
     }
 }

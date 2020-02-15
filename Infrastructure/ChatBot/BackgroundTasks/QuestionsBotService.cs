@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Application.Interfaces;
 using Microsoft.Extensions.Hosting;
 
 namespace API.Services
@@ -11,7 +12,8 @@ namespace API.Services
         
         public QuestionsBotService(IQuestionsBotQueue queue)
         {
-            
+            _queue = queue;
+            Console.Out.WriteLine("Starting service");
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)

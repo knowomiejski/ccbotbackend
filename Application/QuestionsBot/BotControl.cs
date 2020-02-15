@@ -31,11 +31,13 @@ namespace Application.QuestionsBot
         {
             private readonly DataContext _context;
             private ITwitchbot _twitchBot;
+            private IQuestionsBotQueue _questionsBotQueue;
 
-            public Handler(DataContext context, ITwitchbot twitchBot)
+            public Handler(DataContext context, ITwitchbot twitchBot, IQuestionsBotQueue questionsBotQueue)
             {
                 _context = context;
                 _twitchBot = twitchBot;
+                _questionsBotQueue = questionsBotQueue;
             }
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
@@ -46,7 +48,10 @@ namespace Application.QuestionsBot
                 switch (request.BotAction)
                 {
                     case "start":
-                        HandleBotStart(selectedBot, selectedSettings);
+                        _questionsBotQueue.QueueTask(async token =>
+                        {
+                            HandleBotStart(selectedBot, selectedSettings);
+                        });
                         break;
                     case "stop":
                         HandleBotStop();
@@ -62,8 +67,8 @@ namespace Application.QuestionsBot
                 {
                     _twitchBot.Bot = bot;
                     _twitchBot.Settings = settings;
-                    _twitchBot.StartBot();
                     Console.WriteLine(_twitchBot.GetHashCode());
+                    _twitchBot.StartBot();
                 }
             }
 

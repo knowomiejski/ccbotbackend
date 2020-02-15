@@ -2,15 +2,10 @@
 using System.Collections.Concurrent;
 using System.Threading;
 using System.Threading.Tasks;
+using Application.Interfaces;
 
 namespace API.Services
 {
-    public interface IQuestionsBotQueue
-    {
-        void QueueTask(Func<CancellationToken, Task> task);
-        Task<Func<CancellationToken, Task>> PopQueue(CancellationToken cancellationToken);
-    }
-
     public class QuestionsBotQueue : IQuestionsBotQueue
     {
         private ConcurrentQueue<Func<CancellationToken, Task>> _tasks;
@@ -18,6 +13,7 @@ namespace API.Services
         
         public QuestionsBotQueue()
         {
+            Console.Out.WriteLine("Creating Queue");
             _tasks = new ConcurrentQueue<Func<CancellationToken, Task>>();
             _signal = new SemaphoreSlim(0);
         }
@@ -30,6 +26,7 @@ namespace API.Services
 
         public async Task<Func<CancellationToken, Task>> PopQueue(CancellationToken cancellationToken)
         {
+            Console.Out.WriteLine("Waiting for task");
             await _signal.WaitAsync(cancellationToken);
             _tasks.TryDequeue(out var task);
             return task;

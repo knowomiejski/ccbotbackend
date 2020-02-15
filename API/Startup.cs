@@ -1,5 +1,6 @@
 using System.Text;
 using API.Middleware;
+using API.Services;
 using Application.ASettings;
 using Application.Interfaces;
 using Domain;
@@ -77,8 +78,9 @@ namespace API
                 });
             services.AddScoped<IJwtGenerator, JwtGenerator>();
             services.AddScoped<IUserAccessor, UserAccessor>();
-            // services.AddHostedService<TwitchBot>();
-            services.AddSingleton<ITwitchbot, TwitchBot>();
+            services.AddHostedService<QuestionsBotService>();
+            services.AddSingleton<IQuestionsBotQueue, QuestionsBotQueue>();
+            services.AddSingleton<ITwitchbot, QuestionsBot>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
