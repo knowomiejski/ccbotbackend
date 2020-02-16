@@ -98,6 +98,10 @@ namespace Infrastructure.ChatBot
                     string messageContent = getMessageContentFromRawMessage(message);
                     CheckMessage(userName, messageContent);
                 }
+                else if(message.Contains("PING :tmi.twitch.tv"))
+                {
+                    RespondToPing();
+                }
             }
             catch (Exception ex)
             {
@@ -143,7 +147,7 @@ namespace Infrastructure.ChatBot
             try
             {
                 string ircStyleMessage = ":" + Bot.Nick + "!" + Bot.Nick + "@" + Bot.Nick +
-                                         ".tmi.twitch.tv PRIVMSG #" + Settings.TargetChannel + " :/w " + userName + " " + messageContent;
+                                         ".tmi.twitch.tv PRIVMSG #" + Settings.TargetChannel + " :" + userName + " " + messageContent;
                 Console.WriteLine(ircStyleMessage);
                 SendIrcMessage(ircStyleMessage);
             }
@@ -159,6 +163,20 @@ namespace Infrastructure.ChatBot
             {
                 string ircStyleMessage = ":" + Bot.Nick + "!" + Bot.Nick + "@" + Bot.Nick +
                                          ".tmi.twitch.tv PRIVMSG #" + Settings.TargetChannel + " :" + messageContent;
+                Console.WriteLine(ircStyleMessage);
+                SendIrcMessage(ircStyleMessage);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+        
+        private void RespondToPing()
+        {
+            try
+            {
+                string ircStyleMessage = "PONG :tmi.twitch.tv";
                 Console.WriteLine(ircStyleMessage);
                 SendIrcMessage(ircStyleMessage);
             }
